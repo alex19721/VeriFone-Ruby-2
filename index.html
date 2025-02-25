@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<body>
+<form action="dvr.php" method="post">
+    <h2><u>RUBY's DVR logs</u></h2>
+    Select date: &nbsp &nbsp 
+    <input type="date" name="date" />
+    <input type="submit" name="ok" value="Search" onclick="insert()" />
+</form>
+<br><br>
+
+<form action="prn.php" method="post">
+    <h2><u>RUBY's PRN logs</u></h2>
+    Select date: &nbsp &nbsp 
+    <input type="date" name="date" />
+    <input type="submit" name="ok" value="Search" onclick="insert()" />
+</form>
+
+
+
+<?php
+function select(){
+echo "The select function is called.";
+}
+function insert(){
+echo "The insert function is called.";
+}
+?>
